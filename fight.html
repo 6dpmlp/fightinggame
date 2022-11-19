@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fighting Game</title>
+</head>
+<body>
+  <div class="game-container">
+    <div class="player1-container">
+      <div id="player1-name">Player1</div>
+      <div class="player1-image">
+        <img class="image1" 
+        src="assets/SFRyu.gif"
+      />
+      </div>
+      <div class="player1-attack">Q:
+        <span class="player1-attackBtn">Attack</span>
+      </div>
+      <div class="player1-heal">A:
+        <span class="player1-healBtn">Heal</span>
+      </div>
+      <div id="player1-hp">100</div>
+    </div>
+    <div class="simres">
+      <div class="simulate">
+        <button id="simulateBtn">Simulate</button>
+      </div>
+      <div class="reset">
+        <button id="resetBtn">Reset</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <div class="player2-container">
+      <div id="player2-name">Player2</div>
+      <div class="player2-image">
+        <img class="image2"
+        src="assets/SFKen.gif"
+      />
+      </div>
+      <div class="player2-attack">P:
+        <span class="player2-attackBtn">Attack</span>
+      </div>
+      <div class="player2-heal">L:
+        <span class="player2-healBtn">Heal</span>
+      </div>
+      <div id="player2-hp">100</div>
+    </div>
+  </div>
+  
+  <link rel="stylesheet" href="fight.css">
+  <script src="fight.js"></script>
+
+  <audio id='p1attack' src="assets/fastpunch.mp3" type="audio/mpeg"></audio>
+  <audio id='p1heal' src="assets/fastheal.mp3" type="audio/mpeg"></audio>
+  <audio id='p2attack' src="assets/quickhit.mp3" type="audio/mpeg"></audio>
+  <audio id='p2heal' src="assets/quickheal.mp3" type="audio/mpeg"></audio>
+  <audio id='victoire' src="assets/victory.mp3" type="audio/mpeg"></audio>
+</body>
+</html>
